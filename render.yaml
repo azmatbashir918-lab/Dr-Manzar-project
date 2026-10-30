@@ -1,0 +1,30 @@
+# Free temporary testing only. No paid disk or paid service is declared.
+services:
+  - type: web
+    name: dr-manzar-testing
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DEPLOYMENT_MODE
+        value: private-testing
+      - key: MEDIA_STORAGE
+        value: mongodb
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DB
+        value: dr_manzar_testing
+      - key: MFA_ENCRYPTION_KEY
+        sync: false
+      - key: TEST_ACCESS_USER
+        sync: false
+      - key: TEST_ACCESS_PASSWORD
+        sync: false
+      - key: MAIL_MODE
+        value: resend
+      - key: MAIL_FROM
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false

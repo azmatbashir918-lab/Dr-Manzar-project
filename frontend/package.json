@@ -1,0 +1,9 @@
+{
+  "name": "dr-manzar-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "vite --host localhost --port 5173 --strictPort", "build": "vite build", "preview": "vite preview --host localhost", "test": "node --test test/render.test.js" },
+  "dependencies": { "react": "^19.2.0", "react-dom": "^19.2.0", "react-router-dom": "^7.9.0", "lucide-react": "^0.468.0", "qrcode": "^1.5.4" },
+  "devDependencies": { "vite": "^7.2.0" }
+}
